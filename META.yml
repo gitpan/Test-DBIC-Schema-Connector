@@ -1,7 +1,7 @@
 ---
 abstract: 'Generate an instance of a DBIx::Class::Schema as test database'
 author:
-  - 'Torsten Raudssus <torsten@raudss.us> L<http://www.raudss.us/>'
+  - 'Torsten Raudssus <torsten@raudss.us> L<http://raudss.us/>'
 build_requires:
   DBIx::Class: 0.08195
   Test::More: 0.96
@@ -17,10 +17,11 @@ name: Test-DBIC-Schema-Connector
 requires:
   Exporter::Lite: 0.02
   File::Temp: 0.22
+  SQL::Translator: 0.11006
 resources:
   homepage: http://github.com/Getty/p5-test-dbic-schema-connector
   repository: http://github.com/Getty/p5-test-dbic-schema-connector
-version: 0.001
+version: 0.002
 x_Dist_Zilla:
   plugins:
     -

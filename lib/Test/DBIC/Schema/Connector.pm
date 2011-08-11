@@ -3,7 +3,7 @@ BEGIN {
   $Test::DBIC::Schema::Connector::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Test::DBIC::Schema::Connector::VERSION = '0.001';
+  $Test::DBIC::Schema::Connector::VERSION = '0.002';
 }
 # ABSTRACT: Generate an instance of a DBIx::Class::Schema as test database
 use Exporter::Lite;
@@ -58,7 +58,7 @@ Test::DBIC::Schema::Connector - Generate an instance of a DBIx::Class::Schema as
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -108,15 +108,15 @@ Setting the dsn to the given value, ignoring the ENV variable.
 
 =head3 env_user
 
-ENV variable used for the username of the connection. Defaults to I<env_prefix> + B<_user>.
+ENV variable used for the username of the connection. Defaults to I<env_prefix> + B<_USER>.
 
 =head3 env_pass
 
-ENV variable used for the password of the connection. Defaults to I<env_prefix> + B<_pass>.
+ENV variable used for the password of the connection. Defaults to I<env_prefix> + B<_PASS>.
 
 =head3 env_dsn
 
-ENV variable used for the dsn of the connection. Defaults to I<env_prefix> + B<_dsn>.
+ENV variable used for the dsn of the connection. Defaults to I<env_prefix> + B<_DSN>.
 
 =head3 no_deploy
 
@@ -143,11 +143,11 @@ Issue Tracker
 
 =head1 AUTHOR
 
-Torsten Raudssus <torsten@raudss.us> L<http://www.raudss.us/>
+Torsten Raudssus <torsten@raudss.us> L<http://raudss.us/>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Raudssus Social Software.
+This software is copyright (c) 2011 by Raudssus Social Software.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

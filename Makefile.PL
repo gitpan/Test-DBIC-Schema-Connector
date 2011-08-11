@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Generate an instance of a DBIx::Class::Schema as test database',
-  'AUTHOR' => 'Torsten Raudssus <torsten@raudss.us> L<http://www.raudss.us/>',
+  'AUTHOR' => 'Torsten Raudssus <torsten@raudss.us> L<http://raudss.us/>',
   'BUILD_REQUIRES' => {
     'DBIx::Class' => '0.08195',
     'Test::More' => '0.96'
@@ -24,9 +24,10 @@ my %WriteMakefileArgs = (
   'NAME' => 'Test::DBIC::Schema::Connector',
   'PREREQ_PM' => {
     'Exporter::Lite' => '0.02',
-    'File::Temp' => '0.22'
+    'File::Temp' => '0.22',
+    'SQL::Translator' => '0.11006'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }
